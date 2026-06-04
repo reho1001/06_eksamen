@@ -1,0 +1,67 @@
+/***************** index ****************/
+.img-index {
+  background-image: url(img/baggrund-index.webp);
+  background-size: 100%;
+  padding: 2rem;
+}
+.in-grid {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.index-grid {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: rgb(232, 227, 222);
+}
+.index-grid p {
+  padding-bottom: 2rem;
+}
+.index-grid a {
+  color: darkgreen;
+}
+
+/***************** tema ****************/
+.tema-h2 {
+  border-bottom: 1px solid black;
+}
+.tema h2 {
+  margin-top: 10rem;
+  margin-left: 1rem;
+}
+.tema h3 {
+  margin-top: 6rem;
+  margin-left: 2rem;
+}
+.tema p {
+  margin: 2rem;
+}
+.tema a {
+  margin-left: 3rem;
+}
+.tema img {
+  padding: 2rem;
+  border-bottom: 1px solid black;
+}
+/***************** om ****************/
+.img-om {
+  background-image: url(img/om-bg.webp);
+  background-size: 100%;
+  padding: 1rem;
+}
+.img-om img {
+  padding: 2rem;
+}
+.om-grid {
+  margin: 2rem;
+  padding: 4rem;
+  background-color: rgb(232, 227, 222);
+}
+
+.om-grid h2,
+h3 {
+  padding-bottom: 1rem;
+}
+.om-grid p {
+  padding-bottom: 3rem;
+}
