@@ -59,23 +59,35 @@ select,
   appearance: base-select;
 }
 
+/***************** font ****************/
+.cutive-mono-regular {
+  font-family: "Cutive Mono", monospace;
+  font-style: normal;
+}
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
 :root {
   /***************** font ****************/
   --font-h1-h2-p-li: "Cutive Mono", monospace;
   --font-h3-a: "Montserrat", sans-serif;
 
+  /***************** font size mobil ****************/
   --font-size-mobil-h1: 2.1rem;
   --font-size-mobil-h2: 2rem;
   --font-size-mobil-h3: 1.2rem;
   --font-size-mobil-a: 0.8rem;
+  --font-size-p: 1rem;
 
+  /***************** font size desk ****************/
   --font-size-desk-h1: 3rem;
   --font-size-desk-h2: 2.5rem;
   --font-size-desk-h3: 2rem;
   --font-size-desk-a: 1rem;
 
-  --font-size-p: 1rem;
-
+  /***************** font weight ****************/
   --font-weight-h1: 100;
   --font-weight-h2: 600;
   --font-weight-h3: 400;
