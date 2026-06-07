@@ -1,6 +1,52 @@
+/***************** index ****************/
+.index-grid a {
+  color: #5e3816;
+  border-bottom: 1px solid #5e3816;
+  text-transform: uppercase;
+}
+/***************** tema ****************/
+
+/***************** tema h2 farve ****************/
+.tema-h2 {
+  color: #5b0dcf;
+  border-bottom: 1px solid black;
+}
+.tema-h3 {
+  color: #32771c;
+  border-bottom: 1px solid black;
+}
+.tema-h4 {
+  color: #0071be;
+  border-bottom: 1px solid black;
+}
+.tema-h5 {
+  color: #eb6300;
+  border-bottom: 1px solid black;
+}
+.t2-a {
+  color: #5b0dcf;
+  border-bottom: 1px solid #5b0dcf;
+  text-transform: uppercase;
+}
+.t3-a {
+  color: #32771c;
+  border-bottom: 1px solid #32771c;
+  text-transform: uppercase;
+}
+.t4-a {
+  color: #0071be;
+  border-bottom: 1px solid #0071be;
+  text-transform: uppercase;
+}
+.t5-a {
+  color: #eb6300;
+  border-bottom: 1px solid #eb6300;
+  text-transform: uppercase;
+}
+/***************** tema a farve ****************/
+
 /***************** footer ****************/
 footer {
-  border-top: 1px solid black;
   padding-top: 10%;
   margin-bottom: 5%;
 }
@@ -15,7 +61,15 @@ footer p {
   margin-left: 1.5rem;
   line-height: 25px;
 }
-
+@media (min-width: 1000px) {
+  footer {
+    padding-top: 5%;
+    margin-bottom: 1%;
+  }
+  footer img {
+    margin-bottom: 5%;
+  }
+}
 /***************** nav-menu ****************/
 header {
   top: 0;
@@ -77,7 +131,7 @@ nav {
 }
 
 .menu a:hover {
-  color: rgb(68, 80, 126);
+  color: #5e3816;
 }
 
 .burger {

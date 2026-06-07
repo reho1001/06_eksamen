@@ -70,36 +70,39 @@ select,
 }
 
 :root {
-  /***************** font ****************/
+  /***************** font type ****************/
   --font-h1-h2-p-li: "Cutive Mono", monospace;
   --font-h3-a: "Montserrat", sans-serif;
 
   /***************** font size mobil ****************/
-  --font-size-mobil-h1: 2.1rem;
-  --font-size-mobil-h2: 2rem;
-  --font-size-mobil-h3: 1.2rem;
-  --font-size-mobil-a: 0.8rem;
-  --font-size-p: 1rem;
+  --font-size-m-h1: 2.1rem;
+  --font-size-m-h2: 2rem;
+  --font-size-m-h3: 1.3rem;
+  --font-size-m-p: 1rem;
+  --font-size-m-a: 0.8rem;
 
   /***************** font size desk ****************/
-  --font-size-desk-h1: 3rem;
-  --font-size-desk-h2: 2.5rem;
-  --font-size-desk-h3: 2rem;
-  --font-size-desk-a: 1rem;
+  --font-size-d-h1: 3rem;
+  --font-size-d-h2: 2.5rem;
+  --font-size-d-h3: 2rem;
+  --font-size-d-a: 1rem;
+  --font-size-d-p: 1rem;
 
   /***************** font weight ****************/
   --font-weight-h1: 100;
   --font-weight-h2: 600;
   --font-weight-h3: 400;
-  --font-p-space: 150%;
+
+  /***************** letter space ****************/
+  --font-p-space: 160%;
 
   /***************** color ****************/
   --color-bg: #f3f1eb;
   --color-a: black;
 
   /***************** margin ****************/
-  --margin-top-h1-mobil: 2rem;
-  --margin-bottom-h1-mobil: 2rem;
+  --margint-m-h1: 2rem;
+  --marginb-m-h1: 2rem;
 }
 
 body {
@@ -108,29 +111,30 @@ body {
 
 h1 {
   font-family: var(--font-h1-h2-p-li);
-  font-size: var(--font-size-mobil-h1);
+  font-size: var(--font-size-m-h1);
   font-weight: var(--font-weight-h1);
-  margin-top: var(--margin-top-h1-mobil);
-  margin-bottom: var(--margin-bottom-h1-mobil);
+  margin-top: var(--margint-m-h1);
+  margin-bottom: var(--marginb-m-h1);
   text-transform: uppercase;
 }
 h2 {
   font-family: var(--font-h1-h2-p-li);
-  font-size: var(--font-size-mobil-h2);
+  font-size: var(--font-size-m-h2);
   font-weight: var(--font-weight-h2);
 }
 h3 {
   font-family: var(--font-h3-a);
-  font-size: var(--font-size-mobil-h3);
+  font-size: var(--font-size-m-h3);
   font-weight: var(--font-weight-h3);
 }
 p {
   font-family: var(--font-h1-h2-p-li);
-  font-size: var(--font-size-p);
+  font-size: var(--font-size-m-p);
   line-height: var(--font-p-space);
+  max-width: 65ch;
 }
 a {
-  font-size: var(--font-size-mobil-a);
+  font-size: var(--font-size-m-a);
   font-family: var(--font-h3-a);
   color: var(--color-a);
   text-decoration: none;
