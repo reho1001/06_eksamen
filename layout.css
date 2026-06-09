@@ -142,44 +142,56 @@
   border-bottom: none;
 }
 /***************** om ****************/
-.img-om {
+.om {
   background-image: url(img/om-bg.webp);
   background-size: 100%;
-  padding: 1rem;
+  padding-right: 6%;
+  padding-left: 6%;
+  padding-bottom: 6%;
   img {
-    padding: 2rem;
+    padding: 1rem;
   }
 }
-/***************** om box 1 ****************/
+.om h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.2rem;
+}
+.om li {
+  margin-left: 1rem;
+}
+
+/***************** OM box 1 ****************/
 .om-grid-1 {
-  margin: 2rem;
-  padding: 4rem;
+  margin: 1rem;
+  padding: 3rem;
   background-color: rgb(232, 227, 222);
 }
 .om-grid-1 h2 {
   padding-bottom: 1rem;
 }
-.om-grid-1 p {
+.om-grid-1 a {
+  font-family: "Cutive Mono", monospace;
+  font-size: 1rem;
   padding-bottom: 3rem;
 }
-/***************** om box 2 ****************/
+/***************** OM box 2 ****************/
 .om-grid-2 {
-  margin: 2rem;
-  padding: 4rem;
+  margin: 1rem;
+  padding: 3rem;
   background-color: rgb(232, 227, 222);
 }
 .om-grid-2 h3 {
   padding-bottom: 1rem;
 }
 .om-grid-2 p {
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 1000px) {
   .om-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 5rem;
+    padding-top: 5rem;
     margin-left: 15rem;
     margin-right: 15rem;
   }
@@ -187,8 +199,25 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10%;
-    margin-top: 5rem;
-    margin-left: 17rem;
-    margin-right: 17rem;
+    margin-left: 16rem;
+    margin-right: 16rem;
   }
+  .om-grid-1 a {
+    font-size: 1.1rem;
+  }
+  .om li {
+    margin-left: 1rem;
+  }
+}
+/***************** OM - kompetencer ****************/
+.k-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.k-skala {
+  grid-column: 2/3;
+  border: 1px solid black;
+  background: linear-gradient(to right, var(--color-k) 50%, transparent 50%);
+  height: 15px;
+  align-self: center;
 }

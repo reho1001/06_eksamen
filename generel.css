@@ -79,14 +79,16 @@ select,
   --font-size-m-h2: 1.8rem;
   --font-size-m-h3: 1.2rem;
   --font-size-m-p: 1rem;
+  --font-size-m-li: 1rem;
   --font-size-m-a: 0.8rem;
 
   /***************** font size desk ****************/
   --font-size-d-h1: 3rem;
   --font-size-d-h2: 2.5rem;
   --font-size-d-h3: 1.4rem;
-  --font-size-d-a: 0.9rem;
   --font-size-d-p: 1.1rem;
+  --font-size-d-li: 1.1rem;
+  --font-size-d-a: 0.9rem;
 
   /***************** font weight ****************/
   --font-weight-h1: 100;
@@ -99,6 +101,7 @@ select,
   /***************** color ****************/
   --color-bg: #f3f1eb;
   --color-a: black;
+  --color-k: #5e3816;
 
   /***************** margin ****************/
   --margint-m-h1: 2rem;
@@ -141,6 +144,7 @@ a {
 }
 li {
   font-family: var(--font-h1-h2-p-li);
+  font-size: var(--font-size-m-li);
 }
 
 @media (min-width: 1000px) {
@@ -158,5 +162,8 @@ li {
   }
   p {
     font-size: var(--font-size-d-p);
+  }
+  li {
+    font-size: var(--font-size-d-li);
   }
 }
