@@ -3,6 +3,10 @@
   color: #5e3816;
   border-bottom: 1px solid #5e3816;
   text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.img-grid .index-grid a:hover {
+  transform: scale(1.1);
 }
 
 /***************** tema ****************/
@@ -70,6 +74,9 @@ footer p {
   }
 }
 /***************** nav-menu ****************/
+.active {
+  color: red;
+}
 header {
   top: 0;
   display: flex;
