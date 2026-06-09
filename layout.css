@@ -26,6 +26,10 @@
   padding-bottom: 3rem;
   padding-top: 1rem;
 }
+.index-grid img {
+  margin-top: 5%;
+  border: 1px solid #5e3816;
+}
 
 @media (min-width: 1000px) {
   .in-grid {
@@ -49,16 +53,17 @@
   .index-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    margin-bottom: 5rem;
+    margin-left: 22rem;
+    margin-right: 22rem;
+    margin-bottom: 6rem;
+    align-self: center;
   }
   .index-grid img {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    width: 400px;
+    margin-top: 3%;
   }
   .index-grid h3 {
-    padding-bottom: 10rem;
+    padding-bottom: 15rem;
   }
 }
 

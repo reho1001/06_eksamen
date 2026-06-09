@@ -47,28 +47,26 @@
 /***************** tema a farve ****************/
 
 /***************** footer ****************/
-footer {
+.logo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
 }
 footer img {
   height: 60px;
   width: 60px;
-  margin-bottom: 10%;
-  justify-self: center;
-  align-self: center;
 }
 footer p {
   margin-left: 1.5rem;
-  line-height: 25px;
+  margin-bottom: 0.5rem;
+  line-height: 20px;
 }
 @media (min-width: 1000px) {
-  footer {
+  .logo-footer {
     padding-top: 5%;
-    margin-bottom: 1%;
-  }
-  footer img {
-    margin-bottom: 5%;
+    margin-bottom: 8%;
   }
 }
 /***************** nav-menu ****************/
