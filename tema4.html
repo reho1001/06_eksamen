@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tema 4</title>
-    <meta name="robots" content="noindex">
+    <!-- <meta name="robots" content="noindex"> -->
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="generel.css">
@@ -25,7 +25,7 @@
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="tema2.html">PROJEKTER</a></li>
+                <li><a id="active" href="tema2.html">PROJEKTER</a></li>
                 <li><a href="om.html">OM</a></li>
             </ul>
             <button class="burger">
@@ -44,88 +44,94 @@
             </div>
         </div>
         <div class="tema">
-            <div class="tema-h4">
+            <div class="t4-h2">
                 <h2>Tema 4 - grundlæggende udvikling</h2>
                 <p>Site: Emergencysite</p>
             </div>
             <div class="t-grid">
-                <div class="tema-grid">
-                    <h3>Formål</h3>
-                    <p>Formålet med tema 4 er at arbejde med udvikling af brugergrænsefladen på et site.
-                        Brugergrænsefladen udvikles med
-                        vigtige værktøjer som Adobe Illustrator, CSS og JavaScript. I temaet arbejdes der med
-                        vektorgrafik i SVG-formatet i
-                        Adobe Illustrator. Programmeringssproget JavaScript introduceres og bruges til at håndtere
-                        funktionalitet på sitet.
-                        Derudover opbygges der flere avancerede færdigheder i CSS.</p>
-                    <img src="img/t4-site.webp" alt="computer">
+                <div class="t-grid-2">
+                    <div class="tema-grid">
+                        <h3>Formål</h3>
+                        <p>Formålet med tema 4 er at arbejde med udvikling af brugergrænsefladen på et site.
+                            Brugergrænsefladen udvikles med
+                            vigtige værktøjer som Adobe Illustrator, CSS og JavaScript. I temaet arbejdes der med
+                            vektorgrafik i SVG-formatet i
+                            Adobe Illustrator. Programmeringssproget JavaScript introduceres og bruges til at håndtere
+                            funktionalitet på sitet.
+                            Derudover opbygges der flere avancerede færdigheder i CSS.</p>
+                        <img class="t4-img-1" src="img/t4-grafik.webp" alt="svg-grafik">
+                    </div>
+                    <div class="tema-grid">
+                        <h3>Proces</h3>
+                        <p>Udviklingen af emergency-site i tema 4 var en proces med både faglige fremskridt og
+                            udfordringer. Temaet havde ligheder
+                            med de tidligere temaer, idet jeg skulle arbejde videre i eksisterende kode, men samtidig
+                            udvikle et nyt koncept med
+                            udgangspunkt i temaet nødsituation. I dette tema var en del af opgaven at arbejde med
+                            AI-genereret indhold. Det gav mig
+                            en bedre forståelse af mulighederne og begrænsningerne ved at anvende AI i en designproces.
+                            Selvom AI gjorde det muligt
+                            at producere indhold hurtigt, krævede det stadig kritisk udvælgelse og tilpasning for at
+                            sikre kvalitet og relevans.
+                            Derudover producerede jeg grafik og tegnede figurer i Adobe Illustrator, som passede til den
+                            valgte nødsituation og det
+                            AI-genererede indhold. I dette tema udviklede jeg mig endnu mere inden for HTML og CSS
+                            gennem arbejde med HTML forms,
+                            popup-vinduer, dark mode og transitions, men jeg blev virkelig udfordret af JavaScript. Det
+                            var både svært at gennemskue
+                            den eksisterende kode og samtidig tilføje JavaScript samt forstå dets funktion. Men arbejdet
+                            med dark mode og
+                            brugerinteraktioner gav mig en bedre forståelse for, hvordan JavaScript kan forbedre
+                            brugeroplevelsen.</p>
+                        <img class="t4-img-2" src="img/t4-popover.webp" alt="popover">
+                    </div>
                 </div>
-                <div class="tema-grid">
-                    <h3>Proces</h3>
-                    <p>Udviklingen af emergency-site i tema 4 var en proces med både faglige fremskridt og udfordringer.
-                        Temaet havde ligheder
-                        med de tidligere temaer, idet jeg skulle arbejde videre i eksisterende kode, men samtidig
-                        udvikle et nyt koncept med
-                        udgangspunkt i temaet "emergency”. Dertil arbejdede jeg med grafik og tegnede figurer i Adobe
-                        Illustrator. Med henblik
-                        på indhold var opgaven i dette tema at arbejde med AI-genereret indhold. Det gav mig en bedre
-                        forståelse af mulighederne
-                        og begrænsningerne ved at anvende AI i en designproces. Selvom AI gjorde det muligt at producere
-                        indhold hurtigt,
-                        krævede det stadig kritisk udvælgelse og tilpasning for at sikre kvalitet og relevans. I dette
-                        tema udviklede jeg mig
-                        endnu mere inden for HTML og CSS gennem arbejde med HTML forms, popup-vinduer, dark mode og
-                        transitions, men jeg blev
-                        virkelig udfordret af JavaScript. Det var både svært at gennemskue den eksisterende kode og så
-                        samtidig tilføje
-                        JavaScript og forstå dens funktion. Men arbejdet med dark mode og brugerinteraktioner gav mig en
-                        bedre forståelse for,
-                        hvordan JavaScript kan forbedre brugeroplevelsen.</p>
-                    <img src="img/t4-site.webp" alt="computer">
-                </div>
-                <div class="tema-grid">
-                    <h3>Produkt</h3>
-                    <p>“Emergency-site” er produktet i tema 4, en hjemmeside om en nødsituation. Hjemmesiden er udviklet
-                        til unge mennesker,
-                        der har glemt at bestille strøm til deres lejlighed og samtidig mangler grundlæggende viden om
-                        el- og strømforbrug.
-                        Hjemmesiden indeholder fire HTML-filer, otte CSS-filer og fire JS-filer. Forsiden indeholder et
-                        billede af SVG-grafikken
-                        samt en CTA-button, der leder brugeren videre til siden om nødsituationen. Under billedet
-                        præsenteres tre AI-genererede
-                        artikler med tilhørende CTA-buttons og popup-vinduer. På siden om nødsituationen er
-                        SVG-grafikken implementeret med
-                        klikbare cirkler, som giver adgang til en trinvis guide. Hjemmesidens tredje side indeholder en
-                        form, hvor man kan sende
-                        spørgsmål ind. Emergency-sitet indeholder funktioner som dark mode og popup-vinduer, som er
-                        udviklet ved brug af
-                        JavaScript og CSS for at skabe en mere interaktiv brugeroplevelse.</p>
-                    <a class="t4-a" href="https://reho1001.github.io/emergency-main/" target="_blank">Se site her</a>
-                    <img src="img/t4-site.webp" alt="computer">
-                </div>
-                <div class="tema-grid">
-                    <h3>Læring</h3>
-                    <p>Tema 4 og arbejdet med “emergency-sitet” var et udfordrende forløb, fordi der var mange nye
-                        værktøjer og forskellige
-                        arbejdsprocesser, der skulle kombineres i samme projekt. Jeg synes ikke, jeg nåede helt i mål
-                        med produktet, og det
-                        visuelle udtryk blev ikke som jeg havde forestillet mig. I dette tema har jeg lært at bruge
-                        flere værktøjer i Adobe
-                        Illustrator, men på grund af mine begrænsede tegnefærdigheder synes jeg, at hjemmesiden fremstår
-                        mere legende i sit
-                        udtryk og derfor appellerer mere til en yngre målgruppe, end den oprindeligt var tiltænkt.
-                        Arbejdet med Adobe
-                        Illustrator og SVG-infografik gav mig dog en større forståelse for, hvordan specialdesignede
-                        grafiske elementer kan være
-                        med til at understøtte et websites identitet og visuelle udtryk. Jeg videreudviklede mine
-                        færdigheder inden for CSS
-                        gennem arbejde med transitions, popup-vinduer og dark mode. Efterhånden blev jeg mere sikker i
-                        at læse og tilpasse
-                        eksisterende kode. Selvom arbejdet var krævende, fik jeg en større forståelse for sammenhængen
-                        mellem HTML, CSS og
-                        JavaScript. Fremadrettet vil jeg gerne blive mere sikker i JavaScript, da jeg fortsat har et
-                        stort udviklingspotentiale.</p>
-                    <img src="img/t4-site.webp" alt="computer">
+                <div class="t-grid-2">
+                    <div class="tema-grid">
+                        <h3>Produkt</h3>
+                        <p>“Emergency-site” er produktet i tema 4, en hjemmeside om en nødsituation. Hjemmesiden er
+                            udviklet til unge mennesker,
+                            der har glemt at bestille strøm til deres lejlighed og mangler grundlæggende viden om el- og
+                            strømforbrug. Produktet
+                            indeholder fire HTML-filer, otte CSS-filer og fire JS-filer. Forsiden indeholder
+                            SVG-grafikken samt en CTA-button, der
+                            leder brugeren videre til siden om nødsituationen. Under grafikken præsenteres tre
+                            AI-genererede artikler med tilhørende
+                            CTA-buttons og popup-vinduer. På siden med min nødsituation er SVG-grafikken implementeret
+                            med klikbare cirkler, som
+                            giver adgang til en trinvis guide. Hjemmesidens tredje side indeholder en HTML form, hvor
+                            man kan sende spørgsmål ind.
+                            Emergency-sitet indeholder funktioner som dark mode og popup-vinduer, som er udviklet ved
+                            brug af JavaScript og CSS for
+                            at skabe en mere interaktiv brugeroplevelse.</p>
+                        <a class="t4-a" href="https://reho1001.github.io/emergency-main/" target="_blank">Se
+                            emergencysite her</a>
+                        <img class="t4-img-3" src="img/t4-site.webp" alt="emergencysite">
+                    </div>
+                    <div class="tema-grid">
+                        <h3>Læring</h3>
+                        <p>Tema 4 og arbejdet med “emergency-sitet” var et udfordrende forløb, fordi der var mange nye
+                            værktøjer og forskellige
+                            arbejdsprocesser, der skulle kombineres. Jeg synes ikke, at jeg nåede helt i mål med
+                            produktet, og det visuelle udtryk
+                            blev ikke, som jeg havde forestillet mig. I dette tema lærte jeg at bruge flere værktøjer i
+                            Adobe Illustrator, men på
+                            grund af mine begrænsede tegnefærdigheder synes jeg, at hjemmesiden fremstår mere legende i
+                            sit udtryk og derfor
+                            appellerer mere til en yngre målgruppe, end den oprindeligt var tiltænkt. Arbejdet med Adobe
+                            Illustrator og
+                            SVG-infografik gav mig dog en større forståelse for, hvordan specialdesignede grafiske
+                            elementer kan være med til at
+                            understøtte et websites identitet og visuelle udtryk. Jeg videreudviklede mine færdigheder
+                            inden for CSS gennem arbejdet
+                            med transitions, popup-vinduer og dark mode. Efterhånden blev jeg mere sikker i at læse og
+                            tilpasse eksisterende kode.
+                            Selvom arbejdet var krævende, fik jeg en større forståelse for sammenhængen mellem HTML, CSS
+                            og JavaScript. Fremadrettet
+                            vil jeg gerne blive mere sikker i JavaScript, da jeg fortsat er ret usikker i det.
+                        </p>
+                        <img class="t4-img-4" src="img/t4-darkmode.webp" alt="darkmode">
+                    </div>
                 </div>
             </div>
         </div>

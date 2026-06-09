@@ -1,52 +1,55 @@
 /***************** index ****************/
 .index-grid a {
-  color: #5e3816;
-  border-bottom: 1px solid #5e3816;
+  display: inline-block;
+  border-bottom: 1px solid black;
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
-.img-grid .index-grid a:hover {
+.index-grid a:hover {
   transform: scale(1.1);
+  color: #5e3816;
 }
 
 /***************** tema ****************/
 
 /***************** tema h2 farve ****************/
-.tema-h2 {
+.t2-h2 {
   color: #5b0dcf;
   border-bottom: 1px solid black;
 }
-.tema-h3 {
+.t3-h2 {
   color: #32771c;
   border-bottom: 1px solid black;
 }
-.tema-h4 {
+.t4-h2 {
   color: #0071be;
   border-bottom: 1px solid black;
 }
-.tema-h5 {
+.t5-h2 {
   color: #eb6300;
   border-bottom: 1px solid black;
+}
+/***************** tema a farve ****************/
+.tema-grid a {
+  width: fit-content;
+  text-transform: uppercase;
+  margin-left: 3rem;
 }
 .t2-a {
   color: #5b0dcf;
   border-bottom: 1px solid #5b0dcf;
-  text-transform: uppercase;
 }
 .t3-a {
   color: #32771c;
   border-bottom: 1px solid #32771c;
-  text-transform: uppercase;
 }
 .t4-a {
   color: #0071be;
   border-bottom: 1px solid #0071be;
-  text-transform: uppercase;
 }
 .t5-a {
   color: #eb6300;
   border-bottom: 1px solid #eb6300;
-  text-transform: uppercase;
 }
 /***************** tema a farve ****************/
 
@@ -64,8 +67,8 @@ footer img {
 }
 footer p {
   margin-left: 1.5rem;
-  margin-bottom: 0.5rem;
-  line-height: 20px;
+  margin-bottom: 1rem;
+  line-height: 12px;
 }
 @media (min-width: 1000px) {
   .logo-footer {
@@ -73,19 +76,36 @@ footer p {
     margin-bottom: 8%;
   }
 }
-/***************** nav-menu ****************/
-.active {
-  color: red;
+/***************** scrollbar ****************/
+html::before {
+  content: "";
+  inset: 0;
+  background-color: #5e3816;
+  block-size: 4px;
+  animation: site-progress linear both;
+  animation-timeline: scroll();
+  position: fixed;
+  transform-origin: 0 0;
+  z-index: 1000;
 }
+@keyframes site-progress {
+  from {
+    scale: 0 1;
+  }
+}
+
+/***************** nav-menu ****************/
 header {
+  position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border-bottom: 1px solid rgb(50, 42, 42);
+  border-bottom: 1px solid #5e3816;
   max-width: 100%;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-bg);
 }
 
 .logo {
@@ -103,7 +123,7 @@ header {
   font-family: "Cutive Mono";
   font-size: 30px;
   text-decoration: none;
-  color: rgb(50, 42, 42);
+  color: black;
 }
 
 nav {
@@ -118,25 +138,27 @@ nav {
 }
 
 .menu li {
-  margin-right: 20px;
+  margin-right: 2px;
 }
 
 .menu li:last-child {
-  margin-right: 0;
+  border-left: 1px solid #5e3816;
+  margin-right: 25px;
 }
 
 .menu a {
   display: block;
-  padding: 10px;
-  padding-inline: 15px;
+  padding-inline: 25px;
   color: black;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Montserrat";
 }
-
+#active {
+  color: #5e3816;
+}
 .menu a:hover {
   color: #5e3816;
 }
@@ -160,6 +182,10 @@ nav {
 @media (max-width: 800px) {
   .menu {
     display: none;
+  }
+  .menu a {
+    text-align: left;
+    padding-inline: 2rem;
   }
 
   .burger {
@@ -201,9 +227,10 @@ nav {
     background-color: var(--color-bg);
     border: 1px solid grey;
     position: absolute;
+    justify-content: space-between;
     top: 75px;
     right: 0;
-    width: 30%;
+    width: 60%;
     z-index: 1010;
   }
 

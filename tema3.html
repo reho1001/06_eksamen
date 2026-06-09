@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tema 3</title>
-    <meta name="robots" content="noindex">
+    <!-- <meta name="robots" content="noindex"> -->
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="generel.css">
@@ -25,7 +25,7 @@
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="tema2.html">PROJEKTER</a></li>
+                <li><a id="active" href="tema2.html">PROJEKTER</a></li>
                 <li><a href="om.html">OM</a></li>
             </ul>
             <button class="burger">
@@ -44,91 +44,110 @@
             </div>
         </div>
         <div class="tema">
-            <div class="tema-h3">
+            <div class="t3-h2">
                 <h2>Tema 3 - grundlæggende UX/UI</h2>
                 <p>Site: Emnesite</p>
             </div>
             <div class="t-grid">
-                <div class="tema-grid">
-                    <h3>Formål</h3>
-                    <p>Formålet med tema 3 er at få erfaring med udvalgte UX/UI-metoder samt at lære hvordan man
-                        dokumenterer og præsenterer en
-                        design- og udviklingsproces. I temaet arbejdes der med hele designprocessen, fra research,
-                        idéudvikling, moodboards,
-                        sketching og styletiles til indholdsproduktion, wireframes og klikbar prototyping. Derudover
-                        lærer man at designe og
-                        udvikle visuelle elementer som logo og favicon, der er en del af det samlede visuelle udtryk.
-                        Man introduceres også for
-                        forskellige testmetoder, herunder tænke-højt-test, 5-sekunders-test og Likert-test, der anvendes
-                        til at indsamle
-                        indsigter og forbedre produktet.</p>
-                    <img src="img/t3-moodboard.webp" alt="computer">
+                <div class="t-grid-2">
+                    <div class="tema-grid">
+                        <h3>Formål</h3>
+                        <p>Formålet med tema 3 er at få erfaring med udvalgte UX/UI-metoder samt at lære hvordan man
+                            dokumenterer og præsenterer en
+                            design- og udviklingsproces. I temaet arbejdes der med hele designprocessen, fra research,
+                            idéudvikling, moodboards,
+                            sketching og styletiles til indholdsproduktion, wireframes og klikbar prototyping. Derudover
+                            lærer man at designe og
+                            udvikle visuelle elementer som logo og favicon, der er en del af det samlede visuelle
+                            udtryk.
+                            Man introduceres også for
+                            forskellige testmetoder, herunder tænke-højt-test, 5-sekunders-test og Likert-test, der
+                            anvendes
+                            til at indsamle
+                            indsigter og forbedre produktet.</p>
+                        <img class="t3-img-1" src="img/t3-moodboard.webp" alt="computer">
+                    </div>
+                    <div class="tema-grid">
+                        <h3>Proces</h3>
+                        <p>Udviklingen af ”Emnesite” begyndte med en brainstorm. Her fik jeg idéen til at skabe en
+                            hjemmeside om en gåklub. Jeg
+                            valgte at arbejde videre med konceptet, selvom jeg i starten var usikker på idéen. Denne
+                            usikkerhed skyldtes primært, at
+                            det var første gang, jeg arbejdede med udvikling af en hjemmeside fra idé til færdigt
+                            produkt.
+                            Under temaet opnåede jeg
+                            en større forståelse for samspillet mellem UX og UI samt betydningen af designkonventioner.
+                            Jeg
+                            arbejdede med
+                            indholdsproduktion gennem indsamling, udvælgelse og redigering af billeder samt udarbejdelse
+                            af
+                            tekst tilpasset
+                            konceptet i ”Emnesite”. Det gav mig indsigt i, hvordan indhold struktureres og placeres på
+                            de
+                            forskellige sider for at
+                            understøtte brugerens flow og behov. I forbindelse med tænke-højt-testen blev jeg opmærksom
+                            på
+                            brugen af konventioner,
+                            hvilket gav værdifuld feedback til den videre designproces. Derudover fik jeg erfaring med
+                            Figma
+                            som værktøj til
+                            research, dokumentation og designudvikling. Særligt arbejdet med prototypen gav mig en bedre
+                            forståelse af sammenhængen
+                            mellem designbeslutninger og den efterfølgende implementering i VS Code.</p>
+                        <img class="t3-img-2" src="img/t3-brainstorm.webp" alt="computer">
+                    </div>
                 </div>
-                <div class="tema-grid">
-                    <h3>Proces</h3>
-                    <p>Udviklingen af ”Emnesite” begyndte med en brainstorm. Her fik jeg idéen til at skabe en
-                        hjemmeside om en gåklub. Jeg
-                        valgte at arbejde videre med konceptet, selvom jeg i starten var usikker på idéen. Denne
-                        usikkerhed skyldtes primært, at
-                        det var første gang, jeg arbejdede med udvikling af en hjemmeside fra idé til færdigt produkt.
-                        Under temaet opnåede jeg
-                        en større forståelse for samspillet mellem UX og UI samt betydningen af designkonventioner. Jeg
-                        arbejdede med
-                        indholdsproduktion gennem indsamling, udvælgelse og redigering af billeder samt udarbejdelse af
-                        tekst tilpasset
-                        konceptet i ”Emnesite”. Det gav mig indsigt i, hvordan indhold struktureres og placeres på de
-                        forskellige sider for at
-                        understøtte brugerens flow og behov. I forbindelse med tænke-højt-testen blev jeg opmærksom på
-                        brugen af konventioner,
-                        hvilket gav værdifuld feedback til den videre designproces. Derudover fik jeg erfaring med Figma
-                        som værktøj til
-                        research, dokumentation og designudvikling. Særligt arbejdet med prototypen gav mig en bedre
-                        forståelse af sammenhængen
-                        mellem designbeslutninger og den efterfølgende implementering i VS Code.</p>
-                    <img src="img/t3-brainstorm.webp" alt="computer">
-                </div>
-                <div class="tema-grid">
-                    <h3>Produkt</h3>
-                    <p>Produktet i tema 3 er ”Emnesite”, en hjemmeside om gåklubben ”Gåfælles”. På Gåfælles' hjemmeside
-                        kan brugerne tilmelde
-                        sig forskellige gåhold afhængigt af behov og interesse. Hjemmesiden indeholder fire HTML-sider
-                        og to CSS-filer. Den er
-                        opbygget med en enkel navigationsmenu og en overskuelig informationsstruktur, så brugeren
-                        hurtigt kan danne sig et
-                        overblik over de forskellige gåhold. Forsiden introducerer konceptet, mens en oversigtsside
-                        præsenterer de forskellige
-                        gåhold. Herfra kan brugeren klikke sig videre via en CTA til en informationsside med flere
-                        detaljer om det valgte hold.
-                        Det visuelle udtryk er skabt med udgangspunkt i en gennemgående grøn farvepalette inspireret af
-                        billederne på
-                        hjemmesiden. Header og footer har et ensartet design på tværs af alle sider for at skabe
-                        genkendelighed.</p>
-                    <a class="t3-a" href="https://reho1001.github.io/emnesite/index.html" target="_blank">Se site
-                        her</a>
-                    <img src="img/t3-site.webp" alt="computer">
-                </div>
-                <div class="tema-grid">
-                    <h3>Læring</h3>
-                    <p>I tema 3 har jeg arbejdet med at designe en hjemmeside fra bunden med et gennemgående koncept.
-                        Gennem forløbet lærte jeg
-                        at dokumentere designprocessen i Figma og fik erfaring med at udvikle wireframes og en klikbar
-                        prototype. Her blev jeg
-                        særligt opmærksom på, hvor stor betydning valg af skærmstørrelse har for designet, og hvor
-                        vigtigt det er at anvende
-                        mobile-first-princippet allerede i prototypefasen. Gennem tests af min prototype fik jeg
-                        værdifulde indsigter i, hvordan
-                        andre oplever mit design, og hvordan selv mindre justeringer kan forbedre brugeroplevelsen.
-                        Derudover blev jeg opmærksom
-                        på, at jeg finder valg af farver og typografi udfordrende. Derfor oplever jeg, at det visuelle
-                        udtryk på hjemmesiden
-                        ikke helt lever op til mine ambitioner. Jeg erfarede, at det var mere krævende at skabe en
-                        sammenhængende visuel
-                        identitet end at arbejde med struktur, layout og funktionalitet på hjemmesiden. Fremadrettet
-                        ønsker jeg at udvikle mine
-                        kompetencer inden for visuel identitet, farvesammensætning og typografi, så jeg bliver bedre til
-                        at skabe et mere
-                        gennemført og sammenhængende visuelt udtryk.</p>
-                    <img src="img/t3-prototype.webp" alt="computer">
+                <div class="t-grid-2">
+                    <div class="tema-grid">
+                        <h3>Produkt</h3>
+                        <p>Produktet i tema 3 er ”Emnesite”, en hjemmeside om gåklubben ”Gåfælles”. På Gåfælles'
+                            hjemmeside
+                            kan brugerne tilmelde
+                            sig forskellige gåhold afhængigt af behov og interesse. Hjemmesiden indeholder fire
+                            HTML-sider
+                            og to CSS-filer. Den er
+                            opbygget med en enkel navigationsmenu og en overskuelig informationsstruktur, så brugeren
+                            hurtigt kan danne sig et
+                            overblik over de forskellige gåhold. Forsiden introducerer konceptet, mens en oversigtsside
+                            præsenterer de forskellige
+                            gåhold. Herfra kan brugeren klikke sig videre via en CTA til en informationsside med flere
+                            detaljer om det valgte hold.
+                            Det visuelle udtryk er skabt med udgangspunkt i en gennemgående grøn farvepalette inspireret
+                            af
+                            billederne på
+                            hjemmesiden. Header og footer har et ensartet design på tværs af alle sider for at skabe
+                            genkendelighed.</p>
+                        <a class="t3-a" href="https://reho1001.github.io/emnesite/index.html" target="_blank">Se
+                            emnesite her</a>
+                        <img class="t3-img-3" src="img/t3-site.webp" alt="computer">
+                    </div>
+                    <div class="tema-grid">
+                        <h3>Læring</h3>
+                        <p>I tema 3 har jeg arbejdet med at designe en hjemmeside fra bunden med et gennemgående
+                            koncept.
+                            Gennem forløbet lærte jeg
+                            at dokumentere designprocessen i Figma og fik erfaring med at udvikle wireframes og en
+                            klikbar
+                            prototype. Her blev jeg
+                            særligt opmærksom på, hvor stor betydning valg af skærmstørrelse har for designet, og hvor
+                            vigtigt det er at anvende
+                            mobile-first-princippet allerede i prototypefasen. Gennem tests af min prototype fik jeg
+                            værdifulde indsigter i, hvordan
+                            andre oplever mit design, og hvordan selv mindre justeringer kan forbedre brugeroplevelsen.
+                            Derudover blev jeg opmærksom
+                            på, at jeg finder valg af farver og typografi udfordrende. Derfor oplever jeg, at det
+                            visuelle
+                            udtryk på hjemmesiden
+                            ikke helt lever op til mine ambitioner. Jeg erfarede, at det var mere krævende at skabe en
+                            sammenhængende visuel
+                            identitet end at arbejde med struktur, layout og funktionalitet på hjemmesiden. Fremadrettet
+                            ønsker jeg at udvikle mine
+                            kompetencer inden for visuel identitet, farvesammensætning og typografi, så jeg bliver bedre
+                            til
+                            at skabe et mere
+                            gennemført og sammenhængende visuelt udtryk.</p>
+                        <img class="t3-img-4" src="img/t3-prototype.webp" alt="computer">
+                    </div>
                 </div>
             </div>
         </div>
